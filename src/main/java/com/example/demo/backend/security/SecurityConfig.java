@@ -1,39 +1,57 @@
 package com.example.demo.backend.security;
 
-import java.util.Collections;
-
+import com.example.demo.backend.service.UserDetailsServiceImpl;
 import com.example.demo.views.LoginView;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
-
 import com.vaadin.flow.spring.security.VaadinWebSecurity;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
-@EnableWebSecurity 
-@Configuration
-public class SecurityConfig extends VaadinWebSecurity { 
+@EnableWebSecurity
+public class SecurityConfig extends VaadinWebSecurity {
 
-    /**
-     * Demo SimpleInMemoryUserDetailsManager, which only provides
-     * two hardcoded in-memory users and their roles.
-     * NOTE: This shouldn't be used in real-world applications.
-     */
-    private static class SimpleInMemoryUserDetailsManager extends InMemoryUserDetailsManager {
-        public SimpleInMemoryUserDetailsManager() {
-            createUser(new User("user",
-                "{noop}user",
-                Collections.singleton(new SimpleGrantedAuthority("ROLE_USER"))
-            ));
-            createUser(new User("admin",
-                "{noop}admin",
-                Collections.singleton(new SimpleGrantedAuthority("ROLE_ADMIN"))
-            ));
-        }
+    @Bean
+    public UserDetailsService userDetailsService(){
+        return new UserDetailsServiceImpl();
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder(){
+        return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public DaoAuthenticationProvider authenticationProvider(){
+        DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();
+        daoAuthenticationProvider.setUserDetailsService(userDetailsService());
+        daoAuthenticationProvider.setPasswordEncoder(passwordEncoder());
+        return daoAuthenticationProvider;
+    }
+
+    @Override
+    public void configure(WebSecurity web) throws Exception {
+        web
+                .ignoring()
+                .antMatchers("/css/**","/js/**","/images/**");
+    }
+
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.authenticationProvider(authenticationProvider());
+        auth.inMemoryAuthentication()
+                .withUser("user")
+                .password(passwordEncoder().encode("pass"))
+                .roles("USER")
+                .and()
+                .withUser("admin")
+                .password(passwordEncoder().encode("admin"))
+                .roles("ADMIN");
     }
 
     @Override
@@ -48,25 +66,4 @@ public class SecurityConfig extends VaadinWebSecurity {
 
         setLoginView(http, LoginView.class);
     }
-
-    @Bean
-    public InMemoryUserDetailsManager userDetailsService() {
-        return new SimpleInMemoryUserDetailsManager(); 
-    }
-
-    private static final String[] AUTH_WHITELIST = {
-            // -- Swagger UI v2
-            "/v2/api-docs",
-            "/swagger-resources",
-            "/swagger-resources/**",
-            "/configuration/ui",
-            "/configuration/security",
-            "/swagger-ui.html",
-            "/webjars/**",
-            // -- Swagger UI v3 (OpenAPI)
-            "/v3/api-docs/**",
-            "/swagger-ui/**",
-            // other public endpoints
-            "/h2-console/**",
-    };
 }

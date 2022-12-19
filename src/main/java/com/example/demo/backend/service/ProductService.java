@@ -10,6 +10,8 @@ import java.util.Collection;
 
 @Service
 @RequiredArgsConstructor
+
+
 public class ProductService implements CrudListener<Product> {
 
     private final ProductRepository repository;
