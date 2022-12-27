@@ -1,23 +1,23 @@
 package com.example.demo.backend.entity;
 
-import javax.persistence.*;
-import java.io.Serializable;
-import java.util.Objects;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
-import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 @Entity
-@Table(name = "user_info")
-public class UserInfo implements Serializable {
-    private static final long serialVersionUID = 1L;
+@Table(name = "users")
+public class UserInfo implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(insertable = false, name = "user_id", nullable = false)
-    private Integer userId;
+    private Long userId;
 
-    @Column(name = "username", nullable = false)
+    @Column(name = "username", nullable = false, unique = true)
     private String username;
 
     @Column(name = "pwd", nullable = false)
@@ -26,6 +26,10 @@ public class UserInfo implements Serializable {
     @Column(name = "roles")
     private String roles;
 
+    @OneToMany(mappedBy = "userInfo")
+    @Column(name = "products")
+    private List<Product> products;
+
     public UserInfo() {
     }
 
@@ -33,18 +37,49 @@ public class UserInfo implements Serializable {
         this.username = username;
         this.pwd = pwd;
         this.roles = roles;
+        this.products = new ArrayList<>();
     }
 
-    public Integer getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return null;
+    }
+
+    @Override
+    public String getPassword() {
+        return null;
     }
 
     public String getUsername() {
         return username;
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return false;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return false;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return false;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return false;
     }
 
     public void setUsername(String username) {
@@ -73,5 +108,13 @@ public class UserInfo implements Serializable {
                 ", pwd=" + pwd +
                 ", roles=" + roles +
                 "}";
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 }

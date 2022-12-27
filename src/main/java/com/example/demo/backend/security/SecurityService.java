@@ -1,7 +1,10 @@
 package com.example.demo.backend.security;
 
+import com.example.demo.backend.entity.UserInfo;
+import com.example.demo.backend.repository.UserInfoRepository;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.server.VaadinServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -29,4 +32,6 @@ public class SecurityService {
                 VaadinServletRequest.getCurrent().getHttpServletRequest(), null,
                 null);
     }
+
+
 }

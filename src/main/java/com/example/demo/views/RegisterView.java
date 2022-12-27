@@ -19,6 +19,8 @@ import com.vaadin.flow.server.auth.AnonymousAllowed;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import java.util.ArrayList;
+
 @Route("register")
 @AnonymousAllowed
 public class RegisterView extends Composite {
@@ -69,6 +71,8 @@ public class RegisterView extends Composite {
             Notification.show("Enter a password");
         } else if (!password1.equals(password2)) {
             Notification.show("Passwords don't match");
+        } else if (userInfoRepository.findByUsername(username) != null) {
+            Notification.show("Username already under use");
         } else {
             userInfoRepository.save(new UserInfo(username, passwordEncoder.encode(password1),"ADMIN"));
             Notification.show("Account created successfully!");
