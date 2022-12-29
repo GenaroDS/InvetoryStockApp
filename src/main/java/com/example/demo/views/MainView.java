@@ -23,6 +23,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 
 import javax.annotation.security.PermitAll;
+import java.util.List;
 
 @Route("")
 @PermitAll
@@ -48,7 +49,7 @@ public class MainView extends VerticalLayout {
         currentUser = userDetails.returnThisUser();
 
         Button logout = new Button("Logout", click -> securityService.logout());
-        H2 logo = new H2("Welcome to StockApp: " + userDetails.getUsername());
+        H2 logo = new H2("Welcome, " + userDetails.getUsername() + ", to Inventory Stock App.");
         configureGrid(productService,userDetails);
 
         configureForm(userDetails,productService);
@@ -124,7 +125,7 @@ public class MainView extends VerticalLayout {
         filterText.setPlaceholder("Filter by name...");
         filterText.setClearButtonVisible(true);
         filterText.setValueChangeMode(ValueChangeMode.LAZY);
-        filterText.addValueChangeListener(e -> updateList(productService));
+        filterText.addValueChangeListener(e -> updateListWithFilter(productService,filterText.getValue()));
 
         Button addContactButton = new Button("Add product");
         addContactButton.addClickListener(click -> addProduct());
@@ -142,5 +143,17 @@ public class MainView extends VerticalLayout {
     private void updateList(ProductService productService) {
         grid.setItems(productService.find(currentUser.getUserId()));
     }
+
+    private void updateListWithFilter(ProductService productService,String filterText) {
+        grid.setItems(productService.find2(currentUser.getUserId(),filterText));
+    }
+
+
+
+
+//    private void updateListFilter(ProductService productService) {
+//        List<Product> updatedList = productService.find(currentUser.getUserId());
+//        grid.setItems();
+//    }
 
 }

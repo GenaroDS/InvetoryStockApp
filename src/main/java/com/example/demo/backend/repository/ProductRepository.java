@@ -14,9 +14,20 @@ public interface ProductRepository extends JpaRepository<Product,Long> {
     @Query("select c from Product c " +
             "where USER_INFO = :searchTerm ")
     List<Product> search(@Param("searchTerm") Long searchTerm);
+
+    @Query("select p from Product p " +
+            "where lower(p.name) like lower(concat('%', :searchTerm, '%')) " +
+            "and USER_INFO = :userId")
+    List<Product> search2(@Param("searchTerm") String searchTerm, @Param("userId") Long userId);
 //
 //    List<Product> findById(String id);
-    @Query("select c from Product c " +
-            "where lower(NAME) like lower(concat('%', :searchTerm, '%')) ")
-    List<Product> searchProduct(@Param("searchTerm") String searchTerm);
+//    @Query("select c from Product c " +
+//            "where lower(NAME) like lower(concat('%', :searchTerm, '%')) ")
+//    List<Product> searchProduct(@Param("searchTerm") String searchTerm);
+
+//    @Query("select c from Product c " +
+//            "where lower(NAME) like lower(concat('%', :searchTerm, '%')) and lower(b) like lower(concat('%', :searchTerm, '%')) \"")
+//    List<Product> searchProductAndFilter(@Param("searchTerm") String searchTerm, @Param("b") String b);
+
+
 }

@@ -19,13 +19,13 @@ public class ProductService {
         this.repository = repository;
 
     }
-    public List<Product> findAllProducts(String stringFilter) {
-        if (stringFilter == null || stringFilter.isEmpty()) {
-            return repository.findAll();
-        } else {
-            return repository.searchProduct(stringFilter);
-        }
-    }
+//    public List<Product> findAllProducts(String stringFilter) {
+//        if (stringFilter == null || stringFilter.isEmpty()) {
+//            return repository.findAll();
+//        } else {
+//            return repository.searchProduct(stringFilter);
+//        }
+//    }
 
 
 //    public List<Product> findAllProducts(String currentUser){
@@ -36,12 +36,20 @@ public class ProductService {
 //        }
 //    }
 
+//    public List<Product> searchByFilter(String filterText) {
+//        return this.repository.searchProduct(filterText);
+//
+//    }
     public List<Product> findAll(){
         return this.repository.findAll();
     }
 
     public List<Product> find(Long id){
         return this.repository.search(id);
+    }
+
+    public List<Product>find2(Long id, String filterText){
+        return this.repository.search2(filterText ,id);
     }
     public Product add(Product product) {
         return repository.save(product);
