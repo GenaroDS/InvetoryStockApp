@@ -9,7 +9,7 @@ This is a CRUD application designed for the web, using an H2 database. After cre
   <img src="/Apphotos/GridView.jpg" alt="GridView View" width="190"/>
 </div>
 
-And here are the changes reflected on the database:
+And the changes reflected on the database:
 <div style="display: inline-block;">
   <img src="/Apphotos/Products.jpg" alt="Prod" width="300"/>
   <img src="/Apphotos/Users.jpg" alt="Users" width="300"/>
