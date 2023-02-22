@@ -28,9 +28,10 @@ After creating a user account, you can log in and create products, which will be
 
 
 And the changes reflected on the database:
-<div style="display: inline-block;">
-  <img src="/Apphotos/Products.jpg" alt="Prod" width="300"/>
-  <img src="/Apphotos/Users.jpg" alt="Users" width="300"/>
-</div>
+ 
+ 
+<img src="/Apphotos/Products.jpg" alt="Prod" width="300"/>
+ 
+<img src="/Apphotos/Users.jpg" alt="Users" width="300"/>
 
- </details>
+</details>
