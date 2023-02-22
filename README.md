@@ -1,5 +1,5 @@
 # StockApp
-This is another CRUD application, but in a webpage and with an h2 database. Once you create your user, you proced to log in and then each product crated belows to the current loged in user. You can also delete, or modify each created product. Down below there are some images of the app use cycle. For variety the screenshots were taken on my phone to show its responsiveness.
+This is a CRUD application designed for the web, using an H2 database. After creating a user account, you can log in and create products, which will be associated with the logged-in user. You can also delete or modify any of the products you create. Below are some images demonstrating the app's use cycle. To showcase its responsiveness, the screenshots were taken using a mobile phone.
 
 <div style="display: inline-block;">
   <img src="/Apphotos/LoginView.jpg" alt="Login View" width="190"/>
