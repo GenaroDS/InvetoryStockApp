@@ -6,13 +6,26 @@ After creating a user account, you can log in and create products, which will be
 <details>
  <summary><h3>User flow</h3></summary>
  
-<div style="display: inline-block;">
-  <img src="/Apphotos/LoginView.jpg" alt="Login View" width="190"/>
-  <img src="/Apphotos/RegisterView.jpg" alt="Register View" width="190"/>
-  <img src="/Apphotos/EmptyGridView.jpg" alt="EmptyGrid View" width="190"/>
-  <img src="/Apphotos/FromView.jpg" alt="FormView View" width="190"/>
-  <img src="/Apphotos/GridView.jpg" alt="GridView View" width="190"/>
-</div>
+ Login View:
+ 
+ <img src="/Apphotos/LoginView.jpg" alt="Login View" width="190"/>
+ 
+ Creating a user:
+ 
+ <img src="/Apphotos/RegisterView.jpg" alt="Register View" width="190"/>
+ 
+ Logging in and emtpy grid view:
+ 
+ <img src="/Apphotos/EmptyGridView.jpg" alt="EmptyGrid View" width="190"/>
+ 
+ Add product form view:
+ 
+ <img src="/Apphotos/FromView.jpg" alt="FormView View" width="190"/>
+ 
+ Grid view with previously addded procuts in it:
+ 
+ <img src="/Apphotos/GridView.jpg" alt="GridView View" width="190"/>
+
 
 And the changes reflected on the database:
 <div style="display: inline-block;">
