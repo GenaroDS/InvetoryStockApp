@@ -15,7 +15,8 @@ After creating a user account, you can log in and create products, which will be
  <img src="/Apphotos/RegisterView.jpg" alt="Register View" width="190"/>
  
  Logging in and emtpy grid view:
- 
+
+ <img src="/Apphotos/LogingIn.jpeg" alt="EmptyGrid View" width="190"/>
  <img src="/Apphotos/EmptyGridView.jpg" alt="EmptyGrid View" width="190"/>
  
  Add product form view:
