@@ -16,9 +16,10 @@ Inside the collapsible below are some images showing the user flow. To showcase 
  <img src="Apphotos/Crud Vaadin Gif.gif" alt="FormView View" width="350"/>
 
 And the changes reflected on the database:
+
+<img src="Apphotos/Products.png" alt="Users"/>
  
-<img src="Apphotos/Users.png" alt="Prod" width="300"/>
+<img src="Apphotos/Users.png" alt="Prod" />
  
-<img src="Apphotos/Products.png" alt="Users" width="300"/>
 
 </details>
