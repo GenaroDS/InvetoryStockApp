@@ -11,15 +11,10 @@ Inside the collapsible below are some images showing the user flow. To showcase 
  
  <img src="Apphotos/Vaadin Login Gif.gif" alt="Login View" width ="350">
  
+ Add Crud grid view:
  
- Add product form view:
+ <img src="Apphotos/Crud Vaadin Gif.gif" alt="FormView View" width="350"/>
  
- <img src="/Apphotos/FromView.jpg" alt="FormView View" width="190"/>
- 
- Grid view with previously addded procuts in it:
- 
- <img src="/Apphotos/GridView.jpg" alt="GridView View" width="190"/>
-
 
 And the changes reflected on the database:
  
