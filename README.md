@@ -7,21 +7,10 @@ Inside the collapsible below are some images showing the user flow. To showcase 
 <details>
  <summary><h3>User flow</h3></summary>
  
- Login View:
+ Creating account and logging in:
  
- <img src="Apphotos/Vaadin Login Gif.gif" alt="Login View" width="190"/>
+ <img src="Apphotos/Vaadin Login Gif.gif" alt="Login View"/>
  
- Creating a user:
- 
- <img src="/Apphotos/RegisterView.jpg" alt="Register View" width="190"/>
- 
- Logging in:
-
- <img src="/Apphotos/LogingIn.jpeg" alt="Loggin in View" width="190"/>
- 
- Empty grid:
- 
- <img src="/Apphotos/EmptyGridView.jpg" alt="EmptyGrid View" width="190"/>
  
  Add product form view:
  
