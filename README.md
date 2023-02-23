@@ -9,7 +9,7 @@ Inside the collapsible below are some images showing the user flow. To showcase 
  
  Creating account and logging in:
  
- <img src="Apphotos/Vaadin Login Gif.gif" alt="Login View"/ width ="400">
+ <img src="Apphotos/Vaadin Login Gif.gif" alt="Login View" width ="400">
  
  
  Add product form view:
