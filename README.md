@@ -17,8 +17,8 @@ Inside the collapsible below are some images showing the user flow. To showcase 
 
 And the changes reflected on the database:
  
-<img src="/Apphotos/Products.jpg" alt="Prod" width="300"/>
+<img src="Apphotos/Users.png" alt="Prod" width="300"/>
  
-<img src="/Apphotos/Users.jpg" alt="Users" width="300"/>
+<img src="Apphotos/Products.png" alt="Users" width="300"/>
 
 </details>
