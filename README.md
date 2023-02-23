@@ -9,7 +9,7 @@ Inside the collapsible below are some images showing the user flow. To showcase 
  
  Login View:
  
- <img src="/Apphotos/LoginView.jpg" alt="Login View" width="190"/>
+ <img src="Apphotos/Vaadin Login Gif.gif" alt="Login View" width="190"/>
  
  Creating a user:
  
