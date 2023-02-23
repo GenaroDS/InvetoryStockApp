@@ -14,10 +14,8 @@ Inside the collapsible below are some images showing the user flow. To showcase 
  Add Crud grid view:
  
  <img src="Apphotos/Crud Vaadin Gif.gif" alt="FormView View" width="350"/>
- 
 
 And the changes reflected on the database:
- 
  
 <img src="/Apphotos/Products.jpg" alt="Prod" width="300"/>
  
