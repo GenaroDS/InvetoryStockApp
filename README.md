@@ -29,8 +29,8 @@ This CRUD responsive web app utilizes Vaadin, Spring Security, Spring Data, Hibe
   <img src="Apphotos/FromView.jpg" alt="Image 4" width="150">
   <img src="Apphotos/GridView.jpg" alt="Image 3" width="150">
 </div>
-And the changes reflected on the database:
-
+Changes reflected on the database:
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
 <img src="Apphotos/Products.png" alt="Users"/>
-
+</div>
 </details>
