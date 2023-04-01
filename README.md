@@ -22,7 +22,6 @@ And the changes reflected on the database:
 ## Screenshots
 
 <p>This CRUD responsive web app utilizes Vaadin, Spring Security, Spring Data, Hibernate, and H2 Database. Users can create accounts, log in, and manage products associated with their account. The app features Spring Security for authentication and authorization and is built with Hibernate, allowing compatibility with various databases.</p>
- ---
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
   <img src="Apphotos/LoginView.jpg" alt="Image 6" width="165">
   <img src="Apphotos/RegisterView.jpg" alt="Image 2" width="165">
@@ -31,5 +30,7 @@ And the changes reflected on the database:
   <img src="Apphotos/FromView.jpg" alt="Image 4" width="165">
   <img src="Apphotos/GridView.jpg" alt="Image 3" width="165">
 </div>
+ ## Conclution:
+The StockApp is a responsive CRUD web app that enables user account creation, product management, and supports various databases, with mobile-friendly user flow visuals provided.
 
 </details>
