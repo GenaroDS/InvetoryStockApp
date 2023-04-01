@@ -30,7 +30,8 @@ And the changes reflected on the database:
   <img src="Apphotos/FromView.jpg" alt="Image 4" width="165">
   <img src="Apphotos/GridView.jpg" alt="Image 3" width="165">
 </div>
- ## Conclution:
-The StockApp is a responsive CRUD web app that enables user account creation, product management, and supports various databases, with mobile-friendly user flow visuals provided.
+ 
+## Conclution:
+InvetoryStockApp is a responsive CRUD web app that enables user account creation, product management, and supports various databases, with mobile-friendly user flow visuals provided.
 
 </details>
