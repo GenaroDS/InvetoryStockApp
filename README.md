@@ -21,11 +21,11 @@ And the changes reflected on the database:
  
 <img src="Apphotos/Users.png" alt="Prod" />
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
-  <img src="LogingIn.jpeg" alt="Image 1" width="150">
-  <img src="RegisterView.jpg" alt="Image 2" width="150">
-  <img src="GridView.jpg" alt="Image 3" width="150">
-  <img src="FromView.jpg" alt="Image 4" width="150">
-  <img src="EmptyGridView.jpg" alt="Image 5" width="150">
+  <img src="Apphotos/LogingIn.jpeg" alt="Image 1" width="150">
+  <img src="Apphotos/RegisterView.jpg" alt="Image 2" width="150">
+  <img src="Apphotos/GridView.jpg" alt="Image 3" width="150">
+  <img src="Apphotos/FromView.jpg" alt="Image 4" width="150">
+  <img src="Apphotos/EmptyGridView.jpg" alt="Image 5" width="150">
   <img src="your_image6.jpg" alt="Image 6" width="150">
 </div>
 
