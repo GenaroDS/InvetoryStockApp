@@ -18,19 +18,17 @@ Inside the collapsible below are some images showing the user flow. To showcase 
 And the changes reflected on the database:
 
 <img src="Apphotos/Products.png" alt="Users"/>
- 
-<img src="Apphotos/Users.png" alt="Prod" />
-<div style="display: flex; justify-content: space-around;">
+
+ ## Screenshots
+This CRUD responsive web app utilizes Vaadin, Spring Security, Spring Data, Hibernate, and H2 Database. Users can create accounts, log in, and manage products associated with their account. The app features Spring Security for authentication and authorization and is built with Hibernate, allowing compatibility with various databases.
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
   <img src="Apphotos/LoginView.jpg" alt="Image 6" width="150">
   <img src="Apphotos/RegisterView.jpg" alt="Image 2" width="150">
   <img src="Apphotos/LogingIn.jpeg" alt="Image 1" width="150">
- </div>
  <div style="display: flex; justify-content: space-around;">
   <img src="Apphotos/EmptyGridView.jpg" alt="Image 5" width="150">
   <img src="Apphotos/FromView.jpg" alt="Image 4" width="150">
   <img src="Apphotos/GridView.jpg" alt="Image 3" width="150">
-</div>
-
 </div>
 
 </details>
