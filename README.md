@@ -19,6 +19,7 @@ And the changes reflected on the database:
 
 <img src="Apphotos/Products.png" alt="Users"/>
 </details>
+
 ## Screenshots
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
   <img src="Apphotos/LoginView.jpg" alt="Image 6" width="165">
