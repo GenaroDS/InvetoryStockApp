@@ -4,7 +4,7 @@ After creating a user account, you can log in and create products, which will be
 The app includes Authorization and Authentication provided by Spring Security. Additionally, the app is built with Hibernate, which means it could work with any database you choose.  
 Inside the collapsible below are some images showing the user flow. To showcase its responsiveness, the screenshots were taken using a mobile phone.
 
-<h3>User flow</h3>
+<details><h3>User flow</h3>
 
  Creating account and logging in:
 
@@ -17,7 +17,7 @@ Inside the collapsible below are some images showing the user flow. To showcase 
 And the changes reflected on the database:
 
 <img src="Apphotos/Products.png" alt="Users"/>
-
+</details>
 ## Screenshots
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
   <img src="Apphotos/LoginView.jpg" alt="Image 6" width="165">
