@@ -7,13 +7,11 @@ Inside the collapsible below are some images showing the user flow. To showcase 
 <details>
  <summary><h2>User flow</h2></summary>
  
- ## GIFs:
- 
  Creating account and logging in:
 
  <img src="Apphotos/Vaadin Login Gif.gif" alt="Login View" width ="350">
 
- Add Crud grid view:
+ Add item view:
 
  <img src="Apphotos/Crud Vaadin Gif.gif" alt="FormView View" width="350"/>
 
@@ -21,7 +19,7 @@ And the changes reflected on the database:
 
 <img src="Apphotos/Products.png" alt="Users"/>
  
-## Screenshots:
+Screenshots:
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
   <img src="Apphotos/LoginView.jpg" alt="Image 6" width="165">
   <img src="Apphotos/RegisterView.jpg" alt="Image 2" width="165">
