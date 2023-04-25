@@ -5,7 +5,7 @@ The app includes Authorization and Authentication provided by Spring Security. A
 Inside the collapsible below are some images showing the user flow. To showcase its responsiveness, the screenshots were taken using a mobile phone.
 
 <details>
- <summary><h3>User flow</h3></summary>
+ <summary><h2>User flow</h2></summary>
 
  Creating account and logging in:
 
