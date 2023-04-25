@@ -1,4 +1,4 @@
-# StockApp
+# StockWebApp
 This is a CRUD application designed for the web, using Vaadin, Spring Security, Spring Data, Hibernate, and H2 Database.  
 After creating a user account, you can log in and create products, which will be associated with the logged-in user. You can also delete or modify any of the products you create.  
 The app includes Authorization and Authentication provided by Spring Security. Additionally, the app is built with Hibernate, which means it could work with any database you choose.  
