@@ -5,23 +5,14 @@ The app includes Authorization and Authentication provided by Spring Security. A
 Inside the collapsible below are some images showing the user flow. To showcase its responsiveness, the screenshots were taken using a mobile phone.
 
 <h3>User flow</h3>
- 
 
+ Creating account and logging in:
 
-<table>
-  <tr>
-    <td>
-      Creating account and logging in:
-      <br>
-      <img src="Apphotos/Vaadin Login Gif.gif" alt="Login View" width="350">
-    </td>
-    <td>
-      Add Crud grid view:
-      <br>
-      <img src="Apphotos/Crud Vaadin Gif.gif" alt="FormView View" width="350"/>
-    </td>
-  </tr>
-</table>
+ <img src="Apphotos/Vaadin Login Gif.gif" alt="Login View" width ="350">
+
+ Add Crud grid view:
+
+ <img src="Apphotos/Crud Vaadin Gif.gif" alt="FormView View" width="350"/>
 
 And the changes reflected on the database:
 
