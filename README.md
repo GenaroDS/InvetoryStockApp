@@ -7,6 +7,7 @@ Inside the collapsible below are some images showing the user flow. To showcase 
 <h3>User flow</h3>
  
 
+
 <table>
   <tr>
     <td>
@@ -21,6 +22,10 @@ Inside the collapsible below are some images showing the user flow. To showcase 
     </td>
   </tr>
 </table>
+
+And the changes reflected on the database:
+
+<img src="Apphotos/Products.png" alt="Users"/>
 
 ## Screenshots
 
