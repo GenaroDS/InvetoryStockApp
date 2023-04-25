@@ -6,7 +6,9 @@ Inside the collapsible below are some images showing the user flow. To showcase 
 
 <details>
  <summary><h2>User flow</h2></summary>
+ 
  ## GIFs:
+ 
  Creating account and logging in:
 
  <img src="Apphotos/Vaadin Login Gif.gif" alt="Login View" width ="350">
